@@ -1,6 +1,13 @@
 // const { clearArr, getFirstItem } = require('./debug');
 // const {
 //   addToFrontOrBack,
+const addToFrontOrBack = (arr, value, isFront) => {
+    if (isFront) {
+        console.log((arr.unshift(num)))
+    } else {
+        console.log((arr.push(num)))
+    }
+};
 //   reverseString,
 //   newArrayFullOf,
 //   insertIntoMiddle,
