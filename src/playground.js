@@ -9,6 +9,13 @@ const addToFrontOrBack = (arr, value, isFront) => {
     }
 };
 //   reverseString,
+const reverseString = (str) => {
+    const strCopy = str.split('');
+    //console.log(strCopy)
+
+    return strCopy.reverse()
+};
+console.log(reverseString('Cindy'))
 //   newArrayFullOf,
 //   insertIntoMiddle,
 //   deleteFromMiddle,
