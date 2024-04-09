@@ -4,8 +4,14 @@ const clearArr = (arr) => {
 };
 
 const getFirstItem = (array) => {
-  return array.shift();
+  let arr2 = array.slice()
+  let first = arr2.shift()
+  return first
 };
+getFirstItem([1, 2, 3, 4, 5])
+getFirstItem(['a', 'b', 'c'])
+getFirstItem([])
+
 
 module.exports = {
   clearArr,
