@@ -5,7 +5,11 @@ const addToFrontOrBack = (arr, value, isFront) => {
     console.log((arr.push(value)))
   }
 };
-const reverseString = () => {
+const reverseString = (str) => {
+  const strCopy = str.split('');
+  //console.log(strCopy)
+
+  return strCopy.reverse().join('')
 };
 
 const newArrayFullOf = () => {

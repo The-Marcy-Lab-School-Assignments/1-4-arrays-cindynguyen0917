@@ -13,7 +13,7 @@ const reverseString = (str) => {
     const strCopy = str.split('');
     //console.log(strCopy)
 
-    return strCopy.reverse()
+    return strCopy.reverse().join('')
 };
 console.log(reverseString('Cindy'))
 //   newArrayFullOf,
