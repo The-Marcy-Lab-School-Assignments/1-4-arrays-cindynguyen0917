@@ -51,6 +51,14 @@ const isRightIndex = (arr, value, index) => {
     }
 };
 //   roundAllNumsDown,
+const roundAllNumsDown = (arr) => {
+    const arr2 = []
+    for (let num of arr) {
+        arr2.push(Math.floor(num))
+    } return arr2
+
+};
+console.log((roundAllNumsDown([5.9, -7.9, 12.9])))
 //   getAllYCoordinates,
 // } = require('./from-scratch');
 // const { uppercaseAll, destructureCoordinates } = require('./modify');
