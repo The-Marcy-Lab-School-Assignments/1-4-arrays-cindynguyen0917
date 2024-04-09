@@ -49,7 +49,15 @@ const roundAllNumsDown = (arr) => {
 
 };
 
-const getAllYCoordinates = () => {
+const getAllYCoordinates = (arrOfCoords) => {
+  let arr2 = []
+  for (let i = 0; i < arrOfCoords.length; i++) {
+    for (let j = 0; j < arrOfCoords[i].length; j++) {
+      if (j === 1) {
+        arr2.push(arrOfCoords[i][j])
+      }
+    }
+  } return arr2
 };
 
 module.exports = {

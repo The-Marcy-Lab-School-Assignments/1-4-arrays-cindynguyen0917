@@ -60,5 +60,16 @@ const roundAllNumsDown = (arr) => {
 };
 console.log((roundAllNumsDown([5.9, -7.9, 12.9])))
 //   getAllYCoordinates,
+const getAllYCoordinates = (arrOfCoords) => {
+    let arr2 = []
+    for (let i = 0; i < arrOfCoords.length; i++) {
+        for (let j = 0; j < arrOfCoords[i].length; j++) {
+            if (j === 1) {
+                arr2.push(arrOfCoords[i][j])
+            }
+        }
+    } return arr2
+};
+console.log(getAllYCoordinates([[1, 2], [3, 4], [5, 6]]))
 // } = require('./from-scratch');
 // const { uppercaseAll, destructureCoordinates } = require('./modify');
