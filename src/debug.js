@@ -1,7 +1,11 @@
 /* eslint-disable no-param-reassign */
 const clearArr = (arr) => {
-  arr = [];
+  arr = arr1 = [];
+  return arr
 };
+console.log(clearArr([1, 2, 3, 4, 5]))
+console.log(clearArr(['a', 'b', 'c']))
+console.log(clearArr([]))
 
 const getFirstItem = (array) => {
   let arr2 = array.slice()
