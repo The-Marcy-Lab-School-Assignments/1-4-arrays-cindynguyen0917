@@ -40,6 +40,16 @@ const deleteFromMiddle = (arr) => {
 };
 deleteFromMiddle([1, 2, 3, 4, 5])
 //   isRightIndex,
+const isRightIndex = (arr, value, index) => {
+    let arr2 = arr.slice()
+    for (let element of arr2) {
+        if (element === arr[index]) {
+            return true
+        } else {
+            return false
+        }
+    }
+};
 //   roundAllNumsDown,
 //   getAllYCoordinates,
 // } = require('./from-scratch');
