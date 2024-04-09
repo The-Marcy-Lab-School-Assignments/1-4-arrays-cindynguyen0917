@@ -1,9 +1,8 @@
-const uppercaseAll = (word1, word2, word3) => {
-  return [
-    word1.toUpperCase(),
-    word2.toUpperCase(),
-    word3.toUpperCase(),
-  ];
+const uppercaseAll = (...theArgs) => {
+  let arr = []
+  for (let word of theArgs) {
+    arr.push(word.toUpperCase())
+  } return arr
 };
 
 const destructureCoordinates = (coordinates) => {
