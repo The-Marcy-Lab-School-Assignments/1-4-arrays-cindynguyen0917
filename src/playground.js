@@ -33,6 +33,12 @@ const insertIntoMiddle = (arr, value) => {
 }
 insertIntoMiddle([1, 2, 3, 4, 5], 6)
 //   deleteFromMiddle,
+const deleteFromMiddle = (arr) => {
+    let middle = Math.floor(arr.length / 2)
+    arr.splice(middle, 1)
+    console.log(arr)
+};
+deleteFromMiddle([1, 2, 3, 4, 5])
 //   isRightIndex,
 //   roundAllNumsDown,
 //   getAllYCoordinates,
