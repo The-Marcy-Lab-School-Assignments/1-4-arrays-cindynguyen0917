@@ -25,6 +25,13 @@ const newArrayFullOf = (value, numOfValue) => {
 console.log(newArrayFullOf(1, 5))
 console.log(newArrayFullOf(true, 2))
 //   insertIntoMiddle,
+const insertIntoMiddle = (arr, value) => {
+    let middle = Math.floor(arr.length / 2)
+    // console.log(middle)
+    arr.splice(middle, 0, value)
+    console.log(arr)
+}
+insertIntoMiddle([1, 2, 3, 4, 5], 6)
 //   deleteFromMiddle,
 //   isRightIndex,
 //   roundAllNumsDown,

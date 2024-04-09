@@ -18,9 +18,12 @@ const newArrayFullOf = (value, numOfValue) => {
 
 };
 
-const insertIntoMiddle = () => {
-};
-
+const insertIntoMiddle = (arr, value) => {
+  let middle = Math.floor(arr.length / 2)
+  // console.log(middle)
+  arr.splice(middle, 0, value)
+  console.log(arr)
+}
 const deleteFromMiddle = () => {
 };
 
