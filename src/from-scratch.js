@@ -12,7 +12,10 @@ const reverseString = (str) => {
   return strCopy.reverse().join('')
 };
 
-const newArrayFullOf = () => {
+const newArrayFullOf = (value, numOfValue) => {
+  const arr = Array(numOfValue).fill(value)
+  return arr
+
 };
 
 const insertIntoMiddle = () => {

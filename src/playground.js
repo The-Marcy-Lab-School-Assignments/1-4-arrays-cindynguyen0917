@@ -15,8 +15,15 @@ const reverseString = (str) => {
 
     return strCopy.reverse().join('')
 };
-console.log(reverseString('Cindy'))
+//console.log(reverseString('Cindy'))
 //   newArrayFullOf,
+const newArrayFullOf = (value, numOfValue) => {
+    const arr = Array(numOfValue).fill(value)
+    return arr
+
+};
+console.log(newArrayFullOf(1, 5))
+console.log(newArrayFullOf(true, 2))
 //   insertIntoMiddle,
 //   deleteFromMiddle,
 //   isRightIndex,
