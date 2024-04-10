@@ -1,7 +1,6 @@
 /* eslint-disable no-param-reassign */
 const clearArr = (arr) => {
-  arr = arr1 = [];
-  return arr
+  return arr.splice(0, Infinity)
 };
 console.log(clearArr([1, 2, 3, 4, 5]))
 console.log(clearArr(['a', 'b', 'c']))
